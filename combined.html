@@ -4,16 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cómo Interpretar los Resultados</title>
-    <style>
+    <style>     
+
+        @page {
+            margin: 0;
+            margin-top: 60px;
+            margin-bottom: 25px;
+
+            @top-right {
+                content: url("/logo-white.png");
+                height: 60px; /* Adjust to fit your logo's dimensions */
+                text-align: right; /* Center the logo */
+                font-size: 12px;
+                display: block;
+            }
+
+             @bottom-center {
+                content: "Test Mediala - Inside";
+                background-color: #003399; /* As per blue strip below */
+                color: white;
+                font-size: 12px;
+                text-align: center;
+                padding: 5px;
+                height: 20px; /* Ensure proper footer height */
+                width: 100%; /* Full width of the page */
+                display: block;
+            }
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            font-size: 10pt; /* Adjust font size for readability */
+            line-height: 1.5;
             background-color: #f4f4f4;
         }
         .container {
             max-width: 800px;
+            min-height: calc(100vh - 80px); /* Full viewport height minus top and bottom margin */            
+            background-color: #ffffff; /* Ensure the white background is visible */
             margin: 20px auto;
             padding: 20px;
             background-color: #ffffff;
@@ -50,17 +80,18 @@
             margin: 10px 0;
         }
         ul {
-            list-style: disc;
-            padding-left: 20px;
+            margin-left: 0;
+            list-style-type: none;
+            padding-left: 0;
         }
         .column {
-            flex: 1 1 calc(50% - 20px);
+            flex: 1 1 calc(50% - 40px);
             box-sizing: border-box;
         }
         .columns {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 40px;
         }
         .page-break {
             page-break-after: always;
@@ -103,7 +134,8 @@
         <div class="columns">
             <div class="column">
                 <h2 class="section-title">Equipo Centrado en el Soñar</h2>
-                <p><strong>Los equipos centrados en el "soñar"</strong> se caracterizan por su enfoque en la creatividad. <strong>Esta persona tiende a pensar de manera visionaria y a imaginar posibles futuros, estrategias o soluciones disruptivas</strong> que podrían transformar positivamente el rumbo de la organización. Están más orientados hacia la conceptualización de ideas ambiciosas y la identificación de oportunidades futuras.</p>
+                <p><strong>Los equipos centrados en el "soñar"</strong> se caracterizan por su enfoque en la creatividad. <br/>
+                Esta persona <strong>tiende a pensar de manera visionaria y a imaginar posibles futuros, estrategias o soluciones disruptivas</strong> que podrían transformar positivamente el rumbo de la organización. Están más orientados hacia la conceptualización de ideas ambiciosas y la identificación de oportunidades futuras.</p>
 
                 <h3 class="section-title">Te Puede Ser Útil Para</h3>
                 <ul>
