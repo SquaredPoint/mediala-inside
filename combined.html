@@ -40,6 +40,27 @@
             line-height: 1.4;
             background-color: #f4f4f4;
         }
+
+        .image-label {
+            display: flex;
+            align-items: center; /* Align the label vertically with the image */
+            gap: 10px; /* Add space between the image and the label */
+        }
+
+        img.relacion-trabajo {
+            padding: 0 20px;
+            height: 70px; /* Font size * line-height * 2 lines */
+            width: auto; /* Keep the aspect ratio intact */
+            vertical-align: middle; /* Align with text if placed inline */
+        }
+
+        .label-relacion-trabajo {
+            font-size: 1rem; /* Match your text size */
+            color: #003399;; /* Label color */
+            text-transform: uppercase;
+            vertical-align: middle; /* Align with the middle of the image */
+        }
+
         .container {
             max-width: 800px;
             min-height: calc(100vh - 80px); /* Full viewport height minus top and bottom margin */            
@@ -108,7 +129,7 @@
 <body>
     <!-- Page 1 -->
     <div class="container">
-        <h1>02. Cómo Interpretar los Resultados</h1>
+        <h1>02. Cómo Interpretar los Resultados</h1>        
 
         <div class="blue-strip">
             <h2>El Estilo de tu Equipo es Combinado</h2>
@@ -136,7 +157,12 @@
 
     <!-- Page 2 -->
     <div class="container">
-        <h1>02. Cómo Interpretar los Resultados Personales</h1>
+        <h1>02. Cómo Interpretar los Resultados Personales</h1> 
+
+        <div class="image-label">
+            <img src="./sonar.png" class="relacion-trabajo"/>
+            <span class="label-relacion-trabajo"><strong>Equipo centrado en el <br/>soñar</strong></span>
+        </div>
 
         <div class="columns">
             <div class="column">
