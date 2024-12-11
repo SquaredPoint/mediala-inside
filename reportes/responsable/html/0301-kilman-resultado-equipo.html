@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03. Estilos de Gestión de Conflictos</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            line-height: 1.6;
+        }
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .header {
+            background-color: #003399;
+            color: white;
+            padding: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: left;
+        }
+        .content p {
+            margin-bottom: 20px;
+        }
+        .content p strong {
+            font-weight: bold;
+        }
+        .result-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .result-section h2 {
+            color: #003399;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        .styles-grid div img {
+            width: 100%; /* Each image gets 20% of the grid width, with spacing */
+            height: auto; /* Preserve aspect ratio */
+            margin: 5px; /* Adds space between images */
+            margin-bottom: 10px;
+        }
+        .styles-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .styles-grid div {
+            text-align: center;
+        }        
+        .styles-grid div p {
+            font-size: 0.9em;
+            margin: 0;
+        }
+        .footer {
+            background-color: #003399;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>03. ESTILOS DE GESTIÓN DE CONFLICTOS</h1>
+        </div>
+        <div class="content">
+            <p>En esta parte del test Mediala, verás cuál es el <strong>estilo predominante de las personas de tu equipo a la hora de gestionar situaciones de tensión.</strong></p>
+            <p>Existen 5 estilos:</p>
+        </div>
+        <div class="result-section">
+            <h2>El resultado de tu equipo es:</h2>
+            <div class="styles-grid">
+                <div>
+                    <img src="img/0301-roca.png" alt="Roca">
+                    <p><strong>Roca</strong></p>
+                    <p>50%</p>
+                    <p>"La Roca": Al igual que una roca sólida y resistente, este estilo, más competitivo, se enfoca en mantener sus propias posiciones sin ceder, mostrando firmeza y determinación en la resolución del conflicto.</p>
+                </div>
+                <div>
+                    <img src="img/0301-bosque.png" alt="Bosque">
+                    <p><strong>Bosque</strong></p>
+                    <p>20%</p>
+                    <p>"El Bosque": Similar a un bosque diverso y vibrante, este estilo, más colaborativo, fomenta la cooperación, la diversidad de ideas y la interconexión para lograr soluciones que beneficien a todos los involucrados.</p>
+                </div>
+                <div>
+                    <img src="img/0301-rio.png" alt="Río">
+                    <p><strong>Río</strong></p>
+                    <p>10%</p>
+                    <p>"El Río": Implica fluir suavemente a través del conflicto, buscando encontrar un camino intermedio y una solución que satisfaga a todas las partes, de estilo, más conciliador.</p>
+                </div>
+                <div>
+                    <img src="img/0301-nube.png" alt="Nube">
+                    <p><strong>Nube</strong></p>
+                    <p>5%</p>
+                    <p>"La Nube": Similar a una nube que cubre el sol, este estilo evita confrontaciones directas, pospone el conflicto y busca tiempo para reflexionar antes de abordar la situación.</p>
+                </div>
+                <div>
+                    <img src="img/0301-bambu.png" alt="Bambú">
+                    <p><strong>Bambú</strong></p>
+                    <p>5%</p>
+                    <p>"El Bambú": Al igual que el bambú que se dobla sin romperse, este estilo, más acomodativo prioriza mantener la armonía y se adapta a las necesidades de la otra parte, siendo flexible y evitando tensiones innecesarias.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            Test Mediala - Inside
+        </div>
+    </div>
+</body>
+</html>
