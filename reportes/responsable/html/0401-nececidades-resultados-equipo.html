@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04. Necesidades no Cubiertas</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            line-height: 1.6;
+        }
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .header {
+            background-color: #003399;
+            color: white;
+            padding: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: left;
+        }
+        .content p {
+            margin-bottom: 20px;
+        }
+        .content p strong {
+            font-weight: bold;
+        }
+        .results-section {
+            margin-top: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        .results-section h2 {
+            color: #003399;
+            margin-bottom: 10px;
+        }
+        .chart {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            margin-top: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .label-box p {
+            margin-bottom: 1px; /* Reduced vertical space */
+            margin-top: 1px;
+        }
+        .chart div {
+            text-align: center;
+            flex: 1;
+            margin: 0 5px; /* Adds small space between the bars */
+        }
+        .chart div img {
+            width: 80px; /* Fixed width for each bar */
+            height: auto;
+            margin: 0 auto;
+        }
+        .chart div .label-box {
+            background-image: url('img/0401-generic.png'); /* Background image for the labels */
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 0px;
+            margin-bottom: 5px; /* Reduced vertical space */
+            font-size: calc(0.9em - 0.1vw); /* Dynamically adjusts font size */
+            text-align: center;
+            border-radius: 4px;
+            word-wrap: break-word;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            width: 80px; /* Fixed width matching the bar */
+            overflow: hidden; /* Ensures text stays within the box */
+        }
+        .footer {
+            background-color: #003399;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>04. NECESIDADES NO CUBIERTAS</h1>
+        </div>
+        <div class="content">
+            <p>La medición de las necesidades no cubiertas en un equipo se revela como una <strong>práctica esencial para comprender, mejorar y optimizar la dinámica grupal.</strong> Este tipo de evaluación proporciona una ventana reveladora hacia las áreas en las que los individuos pueden experimentar déficits, ya sea en términos de recursos, apoyo emocional o desarrollo profesional.</p>
+            <p><strong>Al identificar estas necesidades no satisfechas, como líder, obtendrás una visión más completa de los desafíos a los que os enfrentáis como equipo, permitiendo una intervención proactiva y estratégica.</strong></p>
+        </div>
+        <div class="results-section">
+            <h2>Este es el resultado de tu equipo</h2>
+            <p>100% cubiertas<br>0% no cubiertas</p>
+            <div class="chart">
+                <div>
+                    <div class="label-box">
+                        <p>SEGURIDAD</p>
+                        <p>50%</p>
+                    </div>
+                    <img src="img/0401-bar1.png" alt="Seguridad">
+                </div>
+                <div>
+                    <div class="label-box">
+                        <p>RESPETO</p>
+                        <p>30%</p>
+                    </div>
+                    <img src="img/0401-bar2.png" alt="Respeto">
+                </div>
+                <div>
+                    <div class="label-box">
+                        <p style="font-size: 0.6em;">RECONOCIMIENTO</p>
+                        <p>100%</p>
+                    </div>
+                    <img src="img/0401-bar3.png" alt="Reconocimiento">
+                </div>
+                <div>
+                    <div class="label-box">
+                        <p>EQUIDAD</p>
+                        <p>10%</p>
+                    </div>
+                    <img src="img/0401-bar4.png" alt="Equidad">
+                </div>
+                <div>
+                    <div class="label-box">
+                        <p style="font-size: 0.8em;">CLARIDAD EXPECTATIVAS</p>
+                        <p>70%</p>
+                    </div>
+                    <img src="img/0401-bar5.png" alt="Claridad Expectativas">
+                </div>
+                <div>
+                    <div class="label-box">
+                        <p>APOYO</p>
+                        <p>80%</p>
+                    </div>
+                    <img src="img/0401-bar6.png" alt="Apoyo">
+                </div>
+                <div>
+                    <div class="label-box">
+                        <p style="font-size: 0.8em;">COLABORACIÓN</p>
+                        <p>50%</p>
+                    </div>
+                    <img src="img/0401-bar7.png" alt="Colaboración">
+                </div>
+                <div>
+                    <div class="label-box">
+                        <p style="font-size: 0.9em;">AUTONOMÍA</p>
+                        <p>20%</p>
+                    </div>
+                    <img src="img/0401-bar8.png" alt="Autonomía">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            Test Mediala - Inside
+        </div>
+    </div>
+</body>
+</html>
