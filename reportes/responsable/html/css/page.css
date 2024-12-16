@@ -1,0 +1,25 @@
+@page {
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 25px;
+
+    @top-right {
+        content: url("img/logo-white.png");
+        height: 60px; /* Adjust to fit your logo's dimensions */
+        text-align: right; /* Center the logo */
+        font-size: 12px;
+        display: block;
+    }
+
+    @bottom-center {
+        content: "Test Mediala - Inside";
+        background-color: #003399; /* As per blue strip below */
+        color: white;
+        font-size: 12px;
+        text-align: center;
+        padding: 5px;
+        height: 20px; /* Ensure proper footer height */
+        width: 100%; /* Full width of the page */
+        display: block;
+    }
+}
